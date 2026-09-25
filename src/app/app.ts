@@ -1,7 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal} from '@angular/core';
+import {ListeCours} from './composants/liste-cours/liste-cours';
+import {EnTete} from './composants//en-tete/en-tete';
+import {PiedPage} from './composants/pied-page/pied-page';
+
 
 @Component({
-  imports: [],
+  imports: [ListeCours, EnTete, PiedPage],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
