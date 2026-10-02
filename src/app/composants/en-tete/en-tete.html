@@ -1,4 +1,7 @@
 <header>
-  <h1>Catalogue de cours et inscriptions</h1>
+  <img [src]="urlLogo" alt="Logo de l'application" class="logo" width="50" height="50">
+  <h1>{{titre}}</h1>
+  <button (click)="changerLogo()">Changer le logo</button><br/>
+  <input type="text" [(ngModel)]="titre" size="200" placeholder="Modifier le titre de l'application">
 </header>
 
